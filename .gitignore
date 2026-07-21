@@ -1,14 +1,15 @@
-# IntelliJ System Files
+# IntelliJ
 .idea/
 *.iml
 out/
 
-# Compiled Java Files
-*.class
-bin/
-build/
+# Java build output
 target/
+build/
+bin/
+*.class
 
-# System metadata
+# OS files
 .DS_Store
 Thumbs.db
+
