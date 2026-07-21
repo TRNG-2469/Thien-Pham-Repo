@@ -3,10 +3,11 @@
 *.iml
 out/
 
-# Compiled Bytecodes
+# Compiled Java Files
 *.class
 bin/
 build/
+target/
 
 # System metadata
 .DS_Store
