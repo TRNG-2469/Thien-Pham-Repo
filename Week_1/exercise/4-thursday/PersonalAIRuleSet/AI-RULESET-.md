@@ -1,0 +1,2 @@
+"I am practicing array manipulation. I wrote this method to remove duplicates: [insert code]. It works, but it returns trailing zeros because the output array is not resized to 'count'. How do I copy elements to a new array 
+of size 'count' using standard array indexing?"
