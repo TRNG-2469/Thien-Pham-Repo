@@ -1,27 +1,26 @@
 public class HRApp {
     public static void main(String[] args) {
-        EmployeeProfile employeeProfile = new EmployeeProfile();
+        try {
+            // Valid employee creation
+            EmployeeProfile employee = new EmployeeProfile("EMP001", "John Doe", 5000.0);
+            System.out.println("Created: " + employee);
 
+            // Update name
+            employee.setName("Jane Doe");
+            System.out.println("Updated: " + employee);
 
-        employeeProfile.setMonthlySalary(-1500);
-        employeeProfile.setName(null);
+            // Update salary
+            employee.setMonthlySalary(6000.0);
+            System.out.println("Updated: " + employee);
 
-        System.out.println(employeeProfile.getEmployeeId());
-        System.out.println(employeeProfile.getName());
-        System.out.println(employeeProfile.getMonthlySalary());
+            // Print final state
+            System.out.println("\nFinal State:");
+            System.out.println("ID: " + employee.getEmployeeId());
+            System.out.println("Name: " + employee.getName());
+            System.out.println("Salary: $" + employee.getMonthlySalary());
 
-
-
-
+        } catch (IllegalArgumentException e) {
+            System.err.println("Validation Error: " + e.getMessage());
+        }
     }
-
-
-
-
-
-
-
-
-
-
 }
